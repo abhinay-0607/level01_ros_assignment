@@ -1,0 +1,8 @@
+bug found 1: testbed_description -> CMakeLists.txt -> line no 23 -> ament_package
+        fix: ament_package()
+bug found 2: testbed_description -> urdf -> testbed.gazebo -> line no 40 -> extra >
+        fix: removed the extra >
+bug found 3: testbed_bringup -> maps -> testbed_world.yaml -> line no 1 -> image file path is wrong
+        fix: changed it to testbed_world.pgm
+bug found 4: testbed_bringup -> Cmakelists.txt -> did not put maps directory in install
+        fix: inserted maps in install{...}

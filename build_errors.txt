@@ -1,0 +1,18 @@
+Starting >>> testbed_description
+Starting >>> testbed_bringup
+--- stderr: testbed_description
+CMake Error at CMakeLists.txt:24:
+  Parse error.  Expected "(", got newline with text "
+
+  ".
+
+
+---
+Failed   <<< testbed_description [0.03s, exited with code 1]
+Aborted  <<< testbed_bringup [0.02s]
+
+Summary: 0 packages finished [0.13s]
+  1 package failed: testbed_description
+  1 package aborted: testbed_bringup
+  2 packages had stderr output: testbed_bringup testbed_description
+  1 package not processed
